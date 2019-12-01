@@ -1,3 +1,6 @@
+from random import randrange
+
+
 class Node:
     def __init__(self, data=None):
         self.data = data
@@ -37,19 +40,8 @@ class LinkedList:
 
 ls = LinkedList()
 
-ls.addv(10)
-ls.addv(23)
-ls.addv(1)
-ls.addv(6)
-ls.addv(90)
-ls.addv(4)
-ls.addv(1)
-ls.addv(10)
-ls.addv(15)
-
-
+for i in range (10):
+    ls.addv(randrange(50))
 ls.printlist()
-
 ls.selsort()
-
 ls.printlist()
